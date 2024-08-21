@@ -6,9 +6,9 @@ import './Header.css'
 function Header() {
     return (
         <div className='header-bg-container'>
-            <a><FontAwesomeIcon icon={faBell} className='icon'/></a>
-            <div>
-                <FontAwesomeIcon icon={faPowerOff} className='icon'/><span>Logout</span>
+            <FontAwesomeIcon icon={faBell} className={`icon ${'bell-icon'}`}/>
+            <div className='powerbutton-content-container'>
+                <FontAwesomeIcon icon={faPowerOff} className='icon'/><span className='logout-span'>Logout</span>
             </div>
         </div>
     )

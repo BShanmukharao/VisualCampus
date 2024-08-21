@@ -7,6 +7,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import './SideBarJquery'
 import './SideBar.css'
+import '../Images/vclogo.png'
 
 
 
@@ -16,7 +17,7 @@ const SideBar = () => {
       <div className='sidebar'>
         <div className='head'>
           <div className='user-img'>
-            <img src="" alt='logo' />
+            <img src="vclogo.png" alt='logo' />
           </div>
           <div className='user-details'>
             <p className='title'>Visual Campus</p>

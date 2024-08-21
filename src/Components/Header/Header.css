@@ -12,3 +12,17 @@
 .icon {
     font-size:20px;
 }
+
+.powerbutton-content-container {
+    display:flex;
+    align-items:center;
+}
+
+.bell-icon {
+    margin-right:30px;
+}
+
+.logout-span {
+    font-weight:bold;
+    margin-left:5px;
+}
