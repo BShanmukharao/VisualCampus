@@ -1,13 +1,24 @@
-import { useState } from 'react';
+import { useState} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Login.css'
 
-function Login() {
+const Login = () => {
+
+    const [userMobile, setUserMobile] = useState("")
+    const [UserPassword, setUserPassword] = useState("")
 
     const [getPasswordToggle, setPasswordToggle] = useState(true);
+
+    const getUserData = (event) => {
+        event.preventDefault();
+        const userDetails = { userMobile, UserPassword };
+        console.log(userDetails);
+        setUserMobile("")
+        setUserPassword("")
+    }
 
     const togglePassword = () => {
         setPasswordToggle(!getPasswordToggle)
@@ -15,14 +26,14 @@ function Login() {
 
     return (
         <div className="Login-bg-container">
-            <form className='form-bg-container'>
+            <form className='form-bg-container' onSubmit={getUserData}>
                 <p className='login-to-Ac-para mb-4'>LOGIN TO YOUR ACCOUNT</p>
                 <div className="input-container mb-3">
-                    <input type="text" name="username" className='each-input-filed' maxLength="10" placeholder="Mobile No" required></input>
+                    <input type="text" className='each-input-filed' maxLength="10" placeholder="Mobile No" required onChange={(event) => setUserMobile(event.target.value)} value={userMobile}/>
                     <FontAwesomeIcon icon={faUser} className='eachIcon' />
                 </div>
                 <div className="input-container mb-4">
-                    <input type={getPasswordToggle ? "password" : "text"} name="password" placeholder='Password' className='each-input-filed' required></input>
+                    <input type={getPasswordToggle ? "password" : "text"} placeholder='Password' className='each-input-filed' required onChange={(event) => setUserPassword(event.target.value)} value={UserPassword}/>
                     {getPasswordToggle ? <FontAwesomeIcon icon={faEye} className='eachIcon' onClick={togglePassword} /> : <FontAwesomeIcon icon={faEyeSlash} className='eachIcon' onClick={togglePassword} />}
                 </div>
                 <div className="forgot-login-container mb-3">
@@ -33,7 +44,7 @@ function Login() {
                     <span style={{ fontSize: '12px', backgroundColor: '#F3F5F6', padding: '5px 10px 5px 10px' }}>OR</span>
                 </div>
                 <div className="text-center">
-                    <button className='create-an-account-button'>CREATE AN ACCOUNT</button>
+                    <button className='create-an-account-button' type='button'>CREATE AN ACCOUNT</button>
                 </div>
             </form>
         </div>
