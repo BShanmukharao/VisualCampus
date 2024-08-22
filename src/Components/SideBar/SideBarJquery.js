@@ -1,21 +1,29 @@
 import $ from 'jquery';
 
-$(".menu > ul > li").on("click", function (e){
-    //remove active form already active
-    $(this).siblings().removeClass("active");
+$(function () {
+  $(".menu > ul > li").on("click", function (e) {
+    e.preventDefault();
 
-    //add active to clicked
-    $(this).toggleClass("active");
+    //$(this).next("ul").slideToggle();
+    //$(this).find("ul").slideToggle();
 
-    //if has sub menu open it
-    $(this).find("ul").slideToggle();
-
-    //class other sub menu if any open
-    $(this).siblings.find("ul").slideUp()
-
-    //remove activate class of sub menu items
-    $(this).siblings().find("ul").find("li").removeClass("action");
+    //$(".menu ul ul").not($(this).find("ul")).removeClass("active").slideUp();
+  });
 })
+
+
+$(function() {
+  $(".menu > ul > li > a").on("click", function(e) {
+    e.preventDefault(); 
+   
+    // Toggle the submenu under the clicked item
+    $(this).next("ul").slideToggle();
+    
+    // Close other open submenus
+    $(".menu ul ul").not($(this).next("ul")).slideUp();
+  });
+});
+
 
 
 
