@@ -91,7 +91,7 @@
     transition: all 0.3s;
 }
 
-.menu ul li .active {
+.menu ul li .active .arrow{
     transform: rotate(90deg);
 }
 
@@ -131,6 +131,7 @@
     border-left: 1px solid #f6f6f6;
 }
 
+
 .rotate {
-    transform: rotate(90deg);
+    transform:  rotate(90deg);
 }

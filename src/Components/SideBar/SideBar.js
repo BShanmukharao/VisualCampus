@@ -27,7 +27,7 @@ const SideBar = () => {
                 <a href='#'>
                   <FontAwesomeIcon icon={faUsers} className='icon' />
                   <span className='text'>Students Management</span>
-                  <FontAwesomeIcon icon={faCaretRight} className='arrow' />
+                  <FontAwesomeIcon icon={faCaretRight} className='arrow'/>
                 </a>
                 <ul className='first-nested-menu'>
                   <li>
@@ -1472,17 +1472,17 @@ const SideBar = () => {
                               <FontAwesomeIcon icon={faCaretRight} className='arrow' />
                             </a>
                             <ul className='forth-nested-menu'>
-                                <li>
-                                  <a href='#'>
-                                    <span className='text'>General Uniform Fee Structure</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href='#'>
-                                    <span className='text'>Define Uniform Fee Receipt No.(s)</span>
-                                  </a>
-                                </li>
-                              </ul>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>General Uniform Fee Structure</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Define Uniform Fee Receipt No.(s)</span>
+                                </a>
+                              </li>
+                            </ul>
                           </li>
                           <li>
                             <a href='#'>
