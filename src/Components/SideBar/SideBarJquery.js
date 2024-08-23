@@ -8,6 +8,8 @@ $(function () {
   $(".menu > ul > li > a").on("click", function (e) {
     e.preventDefault();
 
+    $(this).toggleClass('arrow');
+
     $(this).next("ul").slideToggle();
 
     $(".menu ul ul").not($(this).next("ul")).slideUp();
