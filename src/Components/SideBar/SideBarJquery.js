@@ -8,7 +8,9 @@ $(function () {
   $(".menu ul li ul").hide();     // initially hide all tags inside main-menu
 
   $(".menu > ul > li > a").on("click", function (e) {
+
     e.preventDefault();
+
 
     $(this).find('.arrow').toggleClass("rotate");     // Toggle the "rotate" class on the clicked arrow
 
@@ -29,7 +31,9 @@ $(function () {
 
 $(function () {
   $(".menu > ul > li > ul > li > a").on("click", function (e) {
+
     e.preventDefault();
+
 
     $(this).find('.arrow').toggleClass("rotate");     // Toggle the "rotate" class on the clicked arrow
 
@@ -50,7 +54,9 @@ $(function () {
 
 $(function () {
   $(".menu > ul > li > ul > li > ul > li > a").on("click", function (e) {
+
     e.preventDefault();
+
 
     $(this).find('.arrow').toggleClass("rotate");     // Toggle the "rotate" class on the clicked arrow
 
@@ -66,11 +72,14 @@ $(function () {
 });
 
 
+
 //forth-nested-menu
 
 $(function () {
   $(".menu > ul > li > ul > li > ul > li > ul > li > a").on("click", function (e) {
+
     e.preventDefault();
+
 
     $(this).find('.arrow').toggleClass("rotate");     // Toggle the "rotate" class on the clicked arrow
 
@@ -85,11 +94,15 @@ $(function () {
   });
 });
 
+
+
 //fifth-nested-menu
 
 $(function () {
   $(".menu > ul > li > ul > li > ul > li > ul > li > ul > li > a").on("click", function (e) {
+
     e.preventDefault();
+    
 
     $(this).find('.arrow').toggleClass("rotate");     // Toggle the "rotate" class on the clicked arrow
 
