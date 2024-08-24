@@ -71,7 +71,7 @@
     transition: all 0.3s;
 }
 
-.menu ul li>a:hover,
+.menu ul li > a:hover,
 .menu ul li.active>a {
     color: #000;
     background-color: #f6f6f6;
@@ -87,20 +87,8 @@
 }
 
 .menu ul li .arrow {
-    font-size: 14px;
+    font-size: 15px;
     transition: all 0.3s;
-}
-
-.menu ul li .active .arrow{
-    transform: rotate(90deg);
-}
-
-.menu .sub-menu {
-    display: none;
-    margin-left: 4px;
-    padding-left: 10px;
-    padding-top: 5px;
-    border-left: 1px solid #f6f6f6;
 }
 
 .menu .first-nested-menu {
@@ -131,6 +119,12 @@
     border-left: 1px solid #f6f6f6;
 }
 
+.fifth-nested-menu {
+    margin-left: 4px;
+    padding-left: 10px;
+    padding-top: 5px;
+    border-left: 1px solid #f6f6f6;
+}
 
 .rotate {
     transform:  rotate(90deg);

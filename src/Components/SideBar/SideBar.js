@@ -27,7 +27,7 @@ const SideBar = () => {
                 <a href='#'>
                   <FontAwesomeIcon icon={faUsers} className='icon' />
                   <span className='text'>Students Management</span>
-                  <FontAwesomeIcon icon={faCaretRight} className='arrow'/>
+                  <FontAwesomeIcon icon={faCaretRight} className='arrow' />
                 </a>
                 <ul className='first-nested-menu'>
                   <li>
@@ -77,6 +77,18 @@ const SideBar = () => {
                               <span className='text'>New Students Transaction</span>
                               <FontAwesomeIcon icon={faCaretRight} className='arrow' />
                             </a>
+                            <ul className='forth-nested-menu'>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Define Vehicles for New Students</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Define Bus Stops of New Students</span>
+                                </a>
+                              </li>
+                            </ul>
                           </li>
                           <li>
                             <a href='#'>
@@ -199,6 +211,23 @@ const SideBar = () => {
                               <span className='text'>Auto Remarks</span>
                               <FontAwesomeIcon icon={faCaretRight} className='arrow' />
                             </a>
+                            <ul className='forth-nested-menu'>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Define Remarks Groups</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Define Remarks</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Define Auto Remarks</span>
+                                </a>
+                              </li>
+                            </ul>
                           </li>
                           <li>
                             <a href='#'>
@@ -418,6 +447,18 @@ const SideBar = () => {
                               <span className='text'>Section-wise Weekly Timetable</span>
                               <FontAwesomeIcon icon={faCaretRight} className='arrow' />
                             </a>
+                            <ul className='forth-nested-menu'>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Table View Timetable</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Tree View Timetable</span>
+                                </a>
+                              </li>
+                            </ul>
                           </li>
                         </ul>
                       </li>
@@ -552,6 +593,46 @@ const SideBar = () => {
                               <span className='text'>New Admissions Fee Registers</span>
                               <FontAwesomeIcon icon={faCaretRight} className='arrow' />
                             </a>
+                            <ul className='forth-nested-menu'>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>New Admissions Fee Receipts Register</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Fee R.R.B List</span>
+                                  <FontAwesomeIcon icon={faCaretRight} className='arrow' />
+                                </a>
+                                <ul className='fifth-nested-menu'>
+                                  <li>
+                                    <a href='#'>
+                                      <span className='text'>Individual Card</span>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href='#'>
+                                      <span className='text'>Class-wise R.R.B List</span>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>New Admissions Fee Dues List</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>New Admissions Fee Structure</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Transport Fee Structure</span>
+                                </a>
+                              </li>
+                            </ul>
                           </li>
                           <li>
                             <a href='#'>
@@ -648,6 +729,18 @@ const SideBar = () => {
                               <span className='text'>Class-wise Books Taken Students List</span>
                               <FontAwesomeIcon icon={faCaretRight} className='arrow' />
                             </a>
+                            <ul className='forth-nested-menu'>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Students Who Took Books</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Students Who Have not Taken Books</span>
+                                </a>
+                              </li>
+                            </ul>
                           </li>
                           <li>
                             <a href='#'>
@@ -672,18 +765,144 @@ const SideBar = () => {
                               <span className='text'>Admission Register</span>
                               <FontAwesomeIcon icon={faCaretRight} className='arrow' />
                             </a>
+                            <ul className='forth-nested-menu'>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Complete Register</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Class-wise Register</span>
+                                </a>
+                              </li>
+                            </ul>
                           </li>
                           <li>
                             <a href='#'>
                               <span className='text'>Check for Duplicates</span>
                               <FontAwesomeIcon icon={faCaretRight} className='arrow' />
                             </a>
+                            <ul className='forth-nested-menu'>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Admission No. Duplicates</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Roll No. Duplicates</span>
+                                </a>
+                              </li>
+                            </ul>
                           </li>
                           <li>
                             <a href='#'>
                               <span className='text'>Class Section-wise Students lists</span>
                               <FontAwesomeIcon icon={faCaretRight} className='arrow' />
                             </a>
+                            <ul className='forth-nested-menu'>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Roll No. wise List</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Admn. No. wise List</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Name-wise List</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Roll No. wise List With Mother Name</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Caste-wise List</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Sub-Caste wise List</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Religion-wise List</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Mother Tongues List</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>1st and 2nd Language-wise List</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Missing 1st and 2nd Language List</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>New Admissions List-1</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Admn.No wise New Students List-2</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Fee Group-wise Student List</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Kin and Kith lists</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>House List</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Phone No.s List</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Aadhaar No.s List</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Students Photos List</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Students P.E No.s List</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Identification Marks List</span>
+                                </a>
+                              </li>
+                            </ul>
                           </li>
                           <li>
                             <a href='#'>
@@ -1029,6 +1248,18 @@ const SideBar = () => {
                               <span className='text'>Non-Ascending Fee Receipt Non. / Receipt Dates</span>
                               <FontAwesomeIcon icon={faCaretRight} className='arrow' />
                             </a>
+                            <ul className='forth-nested-menu'>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Non-Ascending Fee Receipt Dates Register</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Non-Ascending Fee Receipt No.s Register</span>
+                                </a>
+                              </li>
+                            </ul>
                           </li>
                           <li>
                             <a href='#'>
@@ -1050,6 +1281,61 @@ const SideBar = () => {
                               <span className='text'>Book Fee Registers</span>
                               <FontAwesomeIcon icon={faCaretRight} className='arrow' />
                             </a>
+                            <ul className='forth-nested-menu'>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Daily Books Fee Report</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Books Fee Dues / R.R.B</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Item-wise Stock Register</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>List of Store Items Groups</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>List of Items Groups</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>List of Class-wise Book Sets</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Class-wise Students List</span>
+                                  <FontAwesomeIcon icon={faCaretRight} className='arrow' />
+                                </a>
+                                <ul className='fifth-nested-menu'>
+                                  <li>
+                                    <a href='#'>
+                                      <span className='text'>Students Who Bought Books</span>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href='#'>
+                                      <span className='text'>Students who Have Not Bought Books</span>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>List of Items to Re-Order</span>
+                                </a>
+                              </li>
+                            </ul>
                           </li>
                           <li>
                             <a href='#'>
@@ -1066,6 +1352,18 @@ const SideBar = () => {
                               <span className='text'>Monthly Fee Registers</span>
                               <FontAwesomeIcon icon={faCaretRight} className='arrow' />
                             </a>
+                            <ul className='forth-nested-menu'>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Monthly Registers</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Specific Period</span>
+                                </a>
+                              </li>
+                            </ul>
                           </li>
                           <li>
                             <a href='#'>
@@ -1077,24 +1375,147 @@ const SideBar = () => {
                               <span className='text'>Fee Received List</span>
                               <FontAwesomeIcon icon={faCaretRight} className='arrow' />
                             </a>
+                            <ul className='forth-nested-menu'>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Data Head-wise Fee Received Lists</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>All Fee Heads</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Full Fee Received Lists</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Fee Unreceived Lists</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Received Less Than a Specific Amount</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Fee Received Before / After due Dates</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Fee Received Other Than in Cash</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Reconcle Fee Cheques Clearance</span>
+                                </a>
+                              </li>
+                            </ul>
                           </li>
                           <li>
                             <a href='#'>
                               <span className='text'>Fines / Concessions</span>
                               <FontAwesomeIcon icon={faCaretRight} className='arrow' />
                             </a>
+                            <ul className='forth-nested-menu'>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Month / Term-wise Fines List</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Total concessions Granted And Availed List</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Month / Term-wise concessions Availed List</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Month / Term-wise concessions Reversed</span>
+                                </a>
+                              </li>
+                            </ul>
                           </li>
                           <li>
                             <a href='#'>
                               <span className='text'>Regular Fee R.R.B lists</span>
                               <FontAwesomeIcon icon={faCaretRight} className='arrow' />
                             </a>
+                            <ul className='forth-nested-menu'>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Individual Card</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Class-wise R.R.B List</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Summary Report</span>
+                                </a>
+                              </li>
+                            </ul>
                           </li>
                           <li>
                             <a href='#'>
                               <span className='text'>Regular Fee Dues lists</span>
                               <FontAwesomeIcon icon={faCaretRight} className='arrow' />
                             </a>
+                            <ul className='forth-nested-menu'>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Detailed Dues List</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Summary of Dues List</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Fee Due Slip</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>No Fee Due Slips</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Fee Dues Memos</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Permitted Students List</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Excess Fee Received From Students</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Fee Defaulters List</span>
+                                </a>
+                              </li>
+                            </ul>
                           </li>
                           <li>
                             <a href='#'>
@@ -1106,6 +1527,18 @@ const SideBar = () => {
                               <span className='text'>Transport Fee R.R.B Lists</span>
                               <FontAwesomeIcon icon={faCaretRight} className='arrow' />
                             </a>
+                            <ul className='forth-nested-menu'>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Transport Individual Card</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Transport R.R.B List</span>
+                                </a>
+                              </li>
+                            </ul>
                           </li>
                           <li>
                             <a href='#'>
@@ -1132,7 +1565,6 @@ const SideBar = () => {
                       <li>
                         <a href='#'>
                           <span className='text'>Today's S.M.S Sent Reports</span>
-                          <FontAwesomeIcon icon={faCaretRight} className='arrow' />
                         </a>
                       </li>
                       <li>
@@ -1194,6 +1626,18 @@ const SideBar = () => {
                               <span className='text'>Monthly Absentees Register</span>
                               <FontAwesomeIcon icon={faCaretRight} className='arrow' />
                             </a>
+                            <ul className='forth-nested-menu'>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Check List</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Blank Form</span>
+                                </a>
+                              </li>
+                            </ul>
                           </li>
                           <li>
                             <a href='#'>
@@ -1876,6 +2320,13 @@ const SideBar = () => {
                           <span className='text'>Attendance Recording</span>
                           <FontAwesomeIcon icon={faCaretRight} className='arrow' />
                         </a>
+                        <ul className='third-nested-menu'>
+                          <li>
+                            <a href='#'>
+                              <span className='text'>Monthly Attendance</span>
+                            </a>
+                          </li>
+                        </ul>
                       </li>
                       <li>
                         <a href='#'>
@@ -1938,6 +2389,121 @@ const SideBar = () => {
                           <span className='text'>Payroll Reports</span>
                           <FontAwesomeIcon icon={faCaretRight} className='arrow' />
                         </a>
+                        <ul className='third-nested-menu'>
+                          <li>
+                            <a href='#'>
+                              <span className='text'>Attendance Register</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href='#'>
+                              <span className='text'>Current Month Attendance Register</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href='#'>
+                              <span className='text'>Salary Statement</span>
+                              <FontAwesomeIcon icon={faCaretRight} className='arrow' />
+                            </a>
+                            <ul className='forth-nested-menu'>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Current Month </span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Previous Months</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href='#'>
+                              <span className='text'>L.I.C Report</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href='#'>
+                              <span className='text'>E.P.F Report</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href='#'>
+                              <span className='text'>P.F Return Form-3A</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href='#'>
+                              <span className='text'>P.F Return Form-6A</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href='#'>
+                              <span className='text'>E.S.I Report</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href='#'>
+                              <span className='text'>Profession Tax Report</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href='#'>
+                              <span className='text'>Profession Tax Return</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href='#'>
+                              <span className='text'>Income Tax Report</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href='#'>
+                              <span className='text'>Other Earnings / Deductions Report</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href='#'>
+                              <span className='text'>MSc. Earnings / Deductions Report</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href='#'>
+                              <span className='text'>Loss of Pay Report</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href='#'>
+                              <span className='text'>Leaves Encashment Report</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href='#'>
+                              <span className='text'>Employee Loans</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href='#'>
+                              <span className='text'>Payroll Journal Voucher (J.V)</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href='#'>
+                              <span className='text'>Address Labels</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href='#'>
+                              <span className='text'>Cumulative Payroll</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href='#'>
+                              <span className='text'>Gratuity / Leave Encashment Report</span>
+                            </a>
+                          </li>
+                        </ul>
                       </li>
                       <li>
                         <a href='#'>
@@ -2124,6 +2690,28 @@ const SideBar = () => {
                           <span className='text'>Voucher Diagnostics</span>
                           <FontAwesomeIcon icon={faCaretRight} className='arrow' />
                         </a>
+                        <ul className='third-nested-menu'>
+                          <li>
+                            <a>
+                              <span className='text'>Verify Vouchers</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a>
+                              <span className='text'>Verify Branches</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a>
+                              <span className='text'>Generate Vouchers Header</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a>
+                              <span className='text'>Verify Missing G.L Codes</span>
+                            </a>
+                          </li>
+                        </ul>
                       </li>
                       <li>
                         <a href='#'>
@@ -2213,12 +2801,46 @@ const SideBar = () => {
                           <span className='text'>Receipts and Payments</span>
                           <FontAwesomeIcon icon={faCaretRight} className='arrow' />
                         </a>
+                        <ul className='third-nested-menu'>
+                          <li>
+                            <a>
+                              <span className='text'>Abridged Receipts And Payments A/C</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a>
+                              <span className='text'>Receipts And Payments Schedule</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a>
+                              <span className='text'>Detailed Receipts And Payments A/C</span>
+                            </a>
+                          </li>
+                        </ul>
                       </li>
                       <li>
                         <a href='#'>
                           <span className='text'>Incom and Expenditure</span>
                           <FontAwesomeIcon icon={faCaretRight} className='arrow' />
                         </a>
+                        <ul className='third-nested-menu'>
+                          <li>
+                            <a>
+                              <span className='text'>Abridged Income And Expenditure A/C</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a>
+                              <span className='text'>Income And Expenditure Schedule</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a>
+                              <span className='text'>Detailed Income And Expenditure A/C</span>
+                            </a>
+                          </li>
+                        </ul>
                       </li>
                       <li>
                         <a href='#'>
@@ -2230,6 +2852,23 @@ const SideBar = () => {
                           <span className='text'>Balance Sheet</span>
                           <FontAwesomeIcon icon={faCaretRight} className='arrow' />
                         </a>
+                        <ul className='third-nested-menu'>
+                          <li>
+                            <a>
+                              <span className='text'>Abridged Balance Sheet</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a>
+                              <span className='text'>Balance Sheet Schedule</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a>
+                              <span className='text'>Detailed Balance Sheet</span>
+                            </a>
+                          </li>
+                        </ul>
                       </li>
                       <li>
                         <a href='#'>
@@ -2382,12 +3021,36 @@ const SideBar = () => {
                           <span className='text'>Depreciation Method</span>
                           <FontAwesomeIcon icon={faCaretRight} className='arrow' />
                         </a>
+                        <ul className='third-nested-menu'>
+                          <li>
+                            <a>
+                              <span className='text'>Straight Line Method (SLM)</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a>
+                              <span className='text'>Reducing Balance Method (RBM / MDV)</span>
+                            </a>
+                          </li>
+                        </ul>
                       </li>
                       <li>
                         <a href='#'>
                           <span className='text'>Depreciation Mode</span>
                           <FontAwesomeIcon icon={faCaretRight} className='arrow' />
                         </a>
+                        <ul className='third-nested-menu'>
+                          <li>
+                            <a>
+                              <span className='text'>Calculate For Days</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a>
+                              <span className='text'>Calculate For Months</span>
+                            </a>
+                          </li>
+                        </ul>
                       </li>
                       <li>
                         <a href='#'>
@@ -2403,6 +3066,33 @@ const SideBar = () => {
                         <a href='#'>
                           <span className='text'>Fixed Assets Masters</span>
                           <FontAwesomeIcon icon={faCaretRight} className='arrow' />
+                        </a>
+                        <ul className='third-nested-menu'>
+                          <li>
+                            <a href='#'>
+                              <span className='text'>Acquistion Modes</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href='#'>
+                              <span className='text'>Present Conditions</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href='#'>
+                              <span className='text'>Location Master</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href='#'>
+                              <span className='text'>Vendors Master</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href='#'>
+                          <span className='text'>Map Fixed Asset Settings To Accounts</span>
                         </a>
                       </li>
                       <li>
@@ -2423,6 +3113,18 @@ const SideBar = () => {
                           <span className='text'>Fixed Assets Tree</span>
                           <FontAwesomeIcon icon={faCaretRight} className='arrow' />
                         </a>
+                        <ul className='third-nested-menu'>
+                          <li>
+                            <a href='#'>
+                              <span className='text'>Graphical Mode</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href='#'>
+                              <span className='text'>Statement Mode</span>
+                            </a>
+                          </li>
+                        </ul>
                       </li>
                       <li>
                         <a href='#'>
@@ -2442,6 +3144,11 @@ const SideBar = () => {
                       <li>
                         <a href='#'>
                           <span className='text'>Fixed Assets Schedule</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href='#'>
+                          <span className='text'>Fixed Assets Labels</span>
                         </a>
                       </li>
                       <li>
