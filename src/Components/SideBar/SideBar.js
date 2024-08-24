@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretRight, faUsers, faUserTie, faFileInvoice, faBook, faHourglassStart, faCommentDots } from '@fortawesome/free-solid-svg-icons';
 
+
 import './SideBarJquery'
 import './SideBar.css'
 
@@ -18,7 +19,6 @@ const SideBar = () => {
             <p className='name'></p>
           </div>
         </div>
-
 
         <div className='nav'>
           <div className='menu'>

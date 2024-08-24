@@ -4,15 +4,22 @@ import $ from 'jquery';
 //first-nested-menu
 
 $(function () {
-  $(".menu ul li ul").hide();
+
+  $(".menu ul li ul").hide();     // initially hide all tags inside main-menu
+
   $(".menu > ul > li > a").on("click", function (e) {
     e.preventDefault();
-  
-    //$('.menu > ul > li > a > .arrow').toggleClass("rotate")
-    
-    $(this).next("ul").slideToggle();
 
-    $(".menu ul ul").not($(this).next("ul")).slideUp();
+    $(this).find('.arrow').toggleClass("rotate");     // Toggle the "rotate" class on the clicked arrow
+
+
+    $('.arrow').not($(this).find('.arrow')).removeClass("rotate");    // Remove the "rotate" class from all other arrows
+
+    
+    $(this).next("ul").slideToggle();     // Toggle the "ul" items on the clicked menu
+
+
+    $(".menu ul ul").not($(this).next("ul")).slideUp();     // Remove the "ul" items from all other menus
   });
 });
 
@@ -23,10 +30,10 @@ $(function () {
 $(function () {
   $(".menu > ul > li > ul > li > a").on("click", function (e) {
     e.preventDefault();
+    
+    $(this).next("ul").slideToggle();     // Toggle the "ul" items on the clicked menu
 
-    $(this).next("ul").slideToggle();
-
-    $(".menu ul ul ul").not($(this).next("ul")).slideUp();
+    $(".menu ul ul ul").not($(this).next("ul")).slideUp();     // Remove the "ul" items from all other menus
   });
 });
 
@@ -38,9 +45,9 @@ $(function () {
   $(".menu > ul > li > ul > li > ul > li > a").on("click", function (e) {
     e.preventDefault();
 
-    $(this).next("ul").slideToggle();
+    $(this).next("ul").slideToggle();     // Toggle the "ul" items on the clicked menu
 
-    $(".menu ul ul ul ul").not($(this).next("ul")).slideUp();
+    $(".menu ul ul ul ul").not($(this).next("ul")).slideUp();     // Remove the "ul" items from all other menus
   });
 });
 
@@ -51,9 +58,9 @@ $(function () {
   $(".menu > ul > li > ul > li > ul > li > ul > li > a").on("click", function (e) {
     e.preventDefault();
 
-    $(this).next("ul").slideToggle();
+    $(this).next("ul").slideToggle();     // Toggle the "ul" items on the clicked menu
 
-    $(".menu ul ul ul ul ul").not($(this).next("ul")).slideUp();
+    $(".menu ul ul ul ul ul").not($(this).next("ul")).slideUp();     // Remove the "ul" items from all other menus
   });
 });
 
@@ -63,9 +70,9 @@ $(function () {
   $(".menu > ul > li > ul > li > ul > li > ul > li > ul > li > a").on("click", function (e) {
     e.preventDefault();
 
-    $(this).next("ul").slideToggle();
+    $(this).next("ul").slideToggle();     // Toggle the "ul" items on the clicked menu
 
-    $(".menu ul ul ul ul ul ul").not($(this).next("ul")).slideUp();
+    $(".menu ul ul ul ul ul ul").not($(this).next("ul")).slideUp();     // Remove the "ul" items from all other menus
   });
 });
 

@@ -1,14 +1,19 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBell, faPowerOff } from '@fortawesome/free-solid-svg-icons';
+import { faBell, faBars, faPowerOff } from '@fortawesome/free-solid-svg-icons';
 
 import './Header.css'
 
 function Header() {
     return (
         <div className='header-bg-container'>
-            <FontAwesomeIcon icon={faBell} className={`icon ${'bell-icon'}`}/>
-            <div className='powerbutton-content-container'>
-                <FontAwesomeIcon icon={faPowerOff} className='icon'/><span className='logout-span'>Logout</span>
+            <div>
+                <FontAwesomeIcon icon={faBars} className="hamburger-menu"/>
+            </div>
+            <div className='bell-icon-with-logout'>
+                <FontAwesomeIcon icon={faBell} className="bell-icon" />
+                <div className='power-icon-with-span'>
+                    <FontAwesomeIcon icon={faPowerOff} className='power-icon' /><span className='logout-span'>Logout</span>
+                </div>
             </div>
         </div>
     )

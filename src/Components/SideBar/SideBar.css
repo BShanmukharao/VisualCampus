@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Inter:wght@100;200;300;400;500;600;700;800;900');
+@import url('../../font-families/font-families.css');
 
 * {
     margin: 0;
@@ -16,7 +16,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    background-color: #c8f3d3;
+    background-color: #3b4655;
     padding: 24px;
 }
 
@@ -28,10 +28,10 @@
     border-bottom: 1px solid #f6f6f6;
 }
 
+
 .user-img {
     width: 44px;
     height: 44px;
-    border-radius: 50%;
     overflow: hiddne;
 }
 
@@ -43,8 +43,8 @@
 .user-details .title {
     font-size: 17px;
     font-weight: bold;
-    color: #757575;
     color: black;
+    color: #ffffff;
     text-transform: uppercase;
 }
 
@@ -65,6 +65,7 @@
     font-size: 14px;
     font-weight: 500;
     color: #757575;
+    color:white;
     text-decoration: none;
     padding: 12px 8px;
     border-radius: 8px;
@@ -73,8 +74,9 @@
 
 .menu ul li > a:hover,
 .menu ul li.active>a {
-    color: #000;
+    color: #000000;
     background-color: #f6f6f6;
+    background-color:rgb(189, 172, 238);
 }
 
 .menu ul li .icon {
@@ -95,35 +97,40 @@
     margin-left: 4px;
     padding-left: 10px;
     padding-top: 5px;
-    border-left: 1px solid #f6f6f6;
+    border-left:1px solid #ffffff;
+    border-left: 1px solid #377fa8;
 }
 
 .second-nested-menu {
     margin-left: 4px;
     padding-left: 10px;
     padding-top: 5px;
-    border-left: 1px solid #f6f6f6;
+    border-left:1px solid #ffffff;
+    border-left: 1px solid #377fa8;
 }
 
 .third-nested-menu {
     margin-left: 4px;
     padding-left: 10px;
     padding-top: 5px;
-    border-left: 1px solid #f6f6f6;
+    border-left:1px solid #ffffff;
+    border-left: 1px solid #377fa8;
 }
 
 .forth-nested-menu {
     margin-left: 4px;
     padding-left: 10px;
     padding-top: 5px;
-    border-left: 1px solid #f6f6f6;
+    border-left:1px solid #ffffff;
+    border-left: 1px solid #377fa8;
 }
 
 .fifth-nested-menu {
     margin-left: 4px;
     padding-left: 10px;
     padding-top: 5px;
-    border-left: 1px solid #f6f6f6;
+    border-left:1px solid #ffffff;
+    border-left: 1px solid #377fa8;
 }
 
 .rotate {
