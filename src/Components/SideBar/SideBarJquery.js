@@ -13,9 +13,9 @@ $(function () {
     $(this).find('.arrow').toggleClass("rotate");     // Toggle the "rotate" class on the clicked arrow
 
 
-    $('.arrow').not($(this).find('.arrow')).removeClass("rotate");    // Remove the "rotate" class from all other arrows
+    $('.menu > ul > li > a > .arrow').not($(this).find('.arrow')).removeClass("rotate");    // Remove the "rotate" class from all other arrows
 
-    
+
     $(this).next("ul").slideToggle();     // Toggle the "ul" items on the clicked menu
 
 
@@ -30,8 +30,15 @@ $(function () {
 $(function () {
   $(".menu > ul > li > ul > li > a").on("click", function (e) {
     e.preventDefault();
-    
+
+    $(this).find('.arrow').toggleClass("rotate");     // Toggle the "rotate" class on the clicked arrow
+
+
+    $('.menu > ul > li > ul > li > a .arrow').not($(this).find(".arrow")).removeClass("rotate");    // Remove the "rotate" class from all other arrows
+
+
     $(this).next("ul").slideToggle();     // Toggle the "ul" items on the clicked menu
+
 
     $(".menu ul ul ul").not($(this).next("ul")).slideUp();     // Remove the "ul" items from all other menus
   });
@@ -45,7 +52,14 @@ $(function () {
   $(".menu > ul > li > ul > li > ul > li > a").on("click", function (e) {
     e.preventDefault();
 
+    $(this).find('.arrow').toggleClass("rotate");     // Toggle the "rotate" class on the clicked arrow
+
+
+    $('.menu > ul > li > ul > li > ul > li > a .arrow').not($(this).find(".arrow")).removeClass("rotate");    // Remove the "rotate" class from all other arrows
+
+
     $(this).next("ul").slideToggle();     // Toggle the "ul" items on the clicked menu
+
 
     $(".menu ul ul ul ul").not($(this).next("ul")).slideUp();     // Remove the "ul" items from all other menus
   });
@@ -58,7 +72,14 @@ $(function () {
   $(".menu > ul > li > ul > li > ul > li > ul > li > a").on("click", function (e) {
     e.preventDefault();
 
+    $(this).find('.arrow').toggleClass("rotate");     // Toggle the "rotate" class on the clicked arrow
+
+
+    $('.menu > ul > li > ul > li > ul > li > ul > li > a .arrow').not($(this).find(".arrow")).removeClass("rotate");    // Remove the "rotate" class from all other arrows
+
+
     $(this).next("ul").slideToggle();     // Toggle the "ul" items on the clicked menu
+
 
     $(".menu ul ul ul ul ul").not($(this).next("ul")).slideUp();     // Remove the "ul" items from all other menus
   });
@@ -69,6 +90,12 @@ $(function () {
 $(function () {
   $(".menu > ul > li > ul > li > ul > li > ul > li > ul > li > a").on("click", function (e) {
     e.preventDefault();
+
+    $(this).find('.arrow').toggleClass("rotate");     // Toggle the "rotate" class on the clicked arrow
+
+
+    $('.menu > ul > li > ul > li > ul > li > ul > li > ul > li > a .arrow').not($(this).find(".arrow")).removeClass("rotate");    // Remove the "rotate" class from all other arrows
+
 
     $(this).next("ul").slideToggle();     // Toggle the "ul" items on the clicked menu
 
