@@ -5,7 +5,7 @@ import $ from 'jquery';
 
 $(function () {
 
-  $(".menu ul li ul").hide();     // initially hide all tags inside main-menu
+  //$(".menu ul li ul").hide();     // initially hide all tags inside main-menu
 
   $(".menu > ul > li > a").on("click", function (e) {
 

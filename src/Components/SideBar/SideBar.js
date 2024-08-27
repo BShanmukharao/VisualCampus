@@ -8,7 +8,7 @@ import './SideBar.css'
 
 const SideBar = () => {
   return (
-    <div className='container'>
+    <div className='bg-container'>
       <div className='sidebar'>
         <div className='head'>
           <div className='user-img'>

@@ -1,6 +1,7 @@
 .header-bg-container {
     width:100%;
-    height:90px;
+    min-height:90px;
+    max-height:90px;
     background-color:#fff;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
     display:flex;
@@ -32,7 +33,6 @@
 .header-bg-container .power-icon-with-span {
     display:flex;
     align-items:center;
-    cursor:pointer;
 }
 
 .logout-span {
@@ -40,8 +40,13 @@
     margin-left:5px;
 }
 
+.logout-router-link {
+    text-decoration:none;
+    color:black;
+}
 
-@media (max-width : 768px) {
+
+@media (max-width : 1400px) {
     .header-bg-container .hamburger-menu {
         display:block;
     }

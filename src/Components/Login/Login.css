@@ -1,5 +1,11 @@
-*{
-    font-family: "Roboto Condensed";
+@import url('../../font-families/font-families.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+    font-family: "Inter", sans-serif;
 }
 
 .Login-bg-container {
@@ -11,7 +17,7 @@
 }
 
 .form-bg-container {
-    background-color: rgb(4, 38, 77);
+    background-color: #3b4655;
     padding:20px;
     border-radius: 5px;
     width:350px;
