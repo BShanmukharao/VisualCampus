@@ -19,7 +19,6 @@ const SideBar = () => {
             <p className='name'></p>
           </div>
         </div>
-
         <div className='nav'>
           <div className='menu'>
             <ul>

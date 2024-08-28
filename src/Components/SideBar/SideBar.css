@@ -21,13 +21,14 @@
     padding: 24px;
 }
 
-ol, ul {
-  padding-left: 0rem;
+ol,
+ul {
+    padding-left: 0rem;
 }
 
 .menu {
-    min-width:100%;
-    max-width:100%;
+    min-width: 100%;
+    max-width: 100%;
 }
 
 
@@ -70,25 +71,25 @@ ol, ul {
 
 .menu ul li a {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
     gap: 10px;
     font-size: 14px;
     font-weight: 500;
     color: #757575;
-    color:white;
+    color: white;
     text-decoration: none;
     padding: 12px 8px;
     border-radius: 8px;
     transition: all 0.3s;
 }
 
-.menu ul li > a:hover,
+.menu ul li>a:hover,
 .menu ul li.active>a {
     color: #000000;
     background-color: #f6f6f6;
-    background-color:rgb(189, 172, 238);
+    background-color: rgb(189, 172, 238);
 }
 
 .menu ul li .icon {
@@ -110,7 +111,7 @@ ol, ul {
     padding-left: 10px;
     padding-top: 5px;
     border-left: 1px solid #377fa8;
-    display:none;
+    display: none;
 }
 
 .second-nested-menu {
@@ -118,7 +119,7 @@ ol, ul {
     padding-left: 10px;
     padding-top: 5px;
     border-left: 1px solid #377fa8;
-    display:none;
+    display: none;
 }
 
 .third-nested-menu {
@@ -126,16 +127,16 @@ ol, ul {
     padding-left: 10px;
     padding-top: 5px;
     border-left: 1px solid #377fa8;
-    display:none;
+    display: none;
 }
 
 .forth-nested-menu {
     margin-left: 4px;
     padding-left: 10px;
     padding-top: 5px;
-    border-left:1px solid #ffffff;
+    border-left: 1px solid #ffffff;
     border-left: 1px solid #377fa8;
-    display:none;
+    display: none;
 }
 
 .fifth-nested-menu {
@@ -143,13 +144,12 @@ ol, ul {
     padding-left: 10px;
     padding-top: 5px;
     border-left: 1px solid #377fa8;
-    display:none;
+    display: none;
 }
 
 .rotate {
-    transform:  rotate(90deg);
+    transform: rotate(90deg);
 }
-
 
 @media (max-width:1400px) {
     .sidebar {
@@ -158,3 +158,30 @@ ol, ul {
 }
 
 
+/*@media (max-width:1399px) {
+    .sidebar {
+        width: 270px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transition: transform 0.3s ease;
+        z-index: 1000;
+    }
+
+    .user-details .title {
+        font-size: 13px;
+        font-weight: bold;
+        color: black;
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+
+    .menu ul li .icon {
+        font-size: 16px;
+        min-width: 32px;
+    }
+
+    .text {
+        font-size: 12px;
+    }
+}*/
