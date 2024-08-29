@@ -1,8 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import SideBar from '../SideBar/SideBar'
 import Header from '../Header/Header'
-import './Home.css'
-import './Homejquery'
+import './Content.css'
 
 import ApplicationsRegistrationFee from '../StudentManagement/DataEntry/NewAdmission/ApplicationsRegistrationFee/ApplicationsRegistrationFee'
 import NewStudentMonthlyTerm from '../StudentManagement/DataEntry/NewAdmission/NewStudentMonthlyTermFee/NewStudentMonthlyTerm'
@@ -14,9 +13,9 @@ const routes = [
 ];
 
 
-function Home() {
+function Content() {
     return (
-        <div className='home-bg-container'>
+        <div className='counter-bg-container'>
             <SideBar />
             <div className='header-content-bg-container'>
                 <Header />
@@ -32,4 +31,4 @@ function Home() {
     )
 }
 
-export default Home
+export default Content

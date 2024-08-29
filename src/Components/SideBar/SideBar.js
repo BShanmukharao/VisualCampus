@@ -1,6 +1,6 @@
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretRight, faUsers, faUserTie, faFileInvoice, faBook, faHourglassStart, faCommentDots } from '@fortawesome/free-solid-svg-icons';
-
 
 import './SideBarJquery'
 import './SideBar.css'
@@ -9,45 +9,58 @@ import './SideBar.css'
 const SideBar = () => {
   return (
     <div className='bg-container'>
-      <div className='sidebar'>
+      <div className='sidebar' id='SideBar-Id'>
         <div className='head'>
-          <div className='user-img'>
-            <img src="" alt='logo' />
+          <div>
+            <Link to="/home" className='logout-router-link'>
+              <img src="https://c8.alamy.com/comp/2E1AKBG/initial-circle-vc-letter-logo-creative-typography-vector-template-creative-letter-vc-logo-vector-2E1AKBG.jpg" alt='logo' className='sidebar-logo' />
+            </Link>
           </div>
           <div className='user-details'>
-            <p className='title'>Visual Campus</p>
-            <p className='name'></p>
+            <Link to="/home" className='logout-router-link'>
+              <p className='title'>Visual Campus</p>
+            </Link>
           </div>
         </div>
         <div className='nav'>
           <div className='menu'>
             <ul>
               <li>
-                <a href='#'>
+                <Link to={""}>
                   <FontAwesomeIcon icon={faUsers} className='icon' />
                   <span className='text'>Students Management</span>
                   <FontAwesomeIcon icon={faCaretRight} className='arrow' />
-                </a>
+                </Link>
                 <ul className='first-nested-menu'>
                   <li>
-                    <a href='#'>
+                    <Link to={""}>
                       <span className='text'>Data Entry</span>
                       <FontAwesomeIcon icon={faCaretRight} className='arrow' />
-                    </a>
+                    </Link>
                     <ul className='second-nested-menu'>
                       <li>
-                        <a href='#'>
+                        <Link to={""}>
                           <span className='text'>New Admissions</span>
                           <FontAwesomeIcon icon={faCaretRight} className='arrow' />
-                        </a>
+                        </Link>
                         <ul className='third-nested-menu'>
+                          <Link to={"a"}>
+                            <li>
+                              <span className='text'>Application / Registration Fee</span>
+                            </li>
+                          </Link>
+                          <Link to={"b"}>
+                            <li>
+                              <span className='text'>New Students Monthly / Term Fee</span>
+                            </li>
+                          </Link>
                           <li>
                             <a href='#'>
                               <span className='text'>Application / Registration Fee</span>
                             </a>
                           </li>
                           <li>
-                            <a href='#'>
+                            <a href="#">
                               <span className='text'>New Students Monthly / Term Fee</span>
                             </a>
                           </li>
@@ -2282,11 +2295,11 @@ const SideBar = () => {
                 </ul>
               </li>
               <li>
-                <a href='#'>
+                <Link to={""}>
                   <FontAwesomeIcon icon={faUserTie} className='icon' />
                   <span className='text'>Employees Management</span>
                   <FontAwesomeIcon icon={faCaretRight} className='arrow' />
-                </a>
+                </Link>
                 <ul className='first-nested-menu'>
                   <li>
                     <a href='#'>
@@ -2612,11 +2625,11 @@ const SideBar = () => {
                 </ul>
               </li>
               <li>
-                <a href='#'>
+                <Link to={""}>
                   <FontAwesomeIcon icon={faFileInvoice} className='icon' />
                   <span className='text'>Accounts Management</span>
                   <FontAwesomeIcon icon={faCaretRight} className='arrow' />
-                </a>
+                </Link>
                 <ul className='first-nested-menu'>
                   <li>
                     <a href='#'>
@@ -2993,11 +3006,11 @@ const SideBar = () => {
                 </ul>
               </li>
               <li>
-                <a href='#'>
+                <Link to={""}>
                   <FontAwesomeIcon icon={faHourglassStart} className='icon' />
                   <span className='text'>Fixed Assets Management</span>
                   <FontAwesomeIcon icon={faCaretRight} className='arrow' />
-                </a>
+                </Link>
                 <ul className='first-nested-menu'>
                   <li>
                     <a href='#'>
@@ -3180,11 +3193,11 @@ const SideBar = () => {
                 </ul>
               </li>
               <li>
-                <a href='#'>
+                <Link to={""}>
                   <FontAwesomeIcon icon={faBook} className='icon' />
                   <span className='text'>Library Management</span>
                   <FontAwesomeIcon icon={faCaretRight} className='arrow' />
-                </a>
+                </Link>
                 <ul className='first-nested-menu'>
                   <li>
                     <a href='#'>
@@ -3376,11 +3389,11 @@ const SideBar = () => {
                 </ul>
               </li>
               <li>
-                <a href='#'>
+                <Link to={""}>
                   <FontAwesomeIcon icon={faCommentDots} className='icon' />
                   <span className='text'>Utilities</span>
                   <FontAwesomeIcon icon={faCaretRight} className='arrow' />
-                </a>
+                </Link>
                 <ul className='first-nested-menu'>
                   <li>
                     <a href='#'>

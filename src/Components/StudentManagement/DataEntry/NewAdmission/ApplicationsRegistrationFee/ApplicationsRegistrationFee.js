@@ -2,7 +2,7 @@ import React from 'react';
 import { useEffect, useMemo } from 'react';
 import $ from 'jquery';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './ApplicationRegistration.css'
+import './ApplicationsRegistrationFee.css'
 import {
     MaterialReactTable,
     useMaterialReactTable,

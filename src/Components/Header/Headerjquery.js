@@ -4,7 +4,7 @@ $(function () {
 
     const getArroId = document.getElementById('header-arrow-icon');
 
-  $(getArroId).on("click", function (e) {
+    $(getArroId).on("click", function (e) {
 
     e.preventDefault();
    
