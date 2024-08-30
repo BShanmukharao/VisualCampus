@@ -6,12 +6,14 @@ import './App.css'
 
 function App() {
   return (
-    <Router>
+    <div className='app-bg-container '>
+      <Router>
         <Routes>
           <Route exact path="/" element={<Login />} />
           <Route exact path="/home/*" element={<Home />} />
         </Routes>
-    </Router>
+      </Router>
+    </div>
   );
 }
 

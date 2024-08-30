@@ -1,4 +1,6 @@
 import $ from 'jquery';
+import { useSelector } from 'react-redux';
+import { Store } from '../Redux/Store';
 
 
 //first-nested-menu
@@ -102,7 +104,7 @@ $(function () {
   $(".menu > ul > li > ul > li > ul > li > ul > li > ul > li > a").on("click", function (e) {
 
     e.preventDefault();
-    
+
 
     $(this).find('.arrow').toggleClass("rotate");     // Toggle the "rotate" class on the clicked arrow
 
@@ -117,5 +119,12 @@ $(function () {
 });
 
 
+$(function () {
+  const arrowId = document.getElementById("Header-Arrow-Id");
+  const sidebarId = document.getElementById('SideBar-Id');
+  $(arrowId).on("click", function (e) {
+    const isSidebarVisible = Store.getState().toggle.value;
+  })
+})
 
 

@@ -1,6 +1,5 @@
 import React from 'react';
-import { useEffect, useMemo } from 'react';
-import $ from 'jquery';
+import { useEffect , useMemo } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './ApplicationsRegistrationFee.css'
 import {
@@ -8,13 +7,29 @@ import {
     useMaterialReactTable,
 } from 'material-react-table';
 
-/*
-<div className='application-registration-table-bg-container'>   
-                <MaterialReactTable table={table}/>
-            </div>
-*/
 
 const data = [
+    {
+        type: "1",
+        particulars: "raju",
+        amount: 100,
+        concess: 120,
+        netfee: 250
+    },
+    {
+        type: "2",
+        particulars: "ravi",
+        amount: 130,
+        concess: 100,
+        netfee: 150
+    },
+    {
+        type: "3",
+        particulars: "kavi",
+        amount: 100,
+        concess: 90,
+        netfee: 300
+    },
     {
         type: "1",
         particulars: "raju",
@@ -57,39 +72,44 @@ function ApplicationRegistration() {
     const columns = useMemo(
 
         () => [
-          {
-            accessorKey: 'type',
-            header: 'type'.toUpperCase(),
-            size: 150,
-          },
-          {
-            accessorKey: 'particulars',
-            header: 'particulars'.toUpperCase(),
-            size: 150,
-          },
-          {
-            accessorKey: 'amount',
-            header: 'amount'.toUpperCase(),
-            size: 200,
-          },
-          {
-            accessorKey: 'concess',
-            header: 'concess'.toUpperCase(),
-            size: 150,
-          },
-          {
-            accessorKey: 'netfee',
-            header: 'NET FEE',
-            size: 150,
-          },
+            {
+                accessorKey: 'type',
+                header: 'type'.toUpperCase(),
+                size: 50,
+                muiTableHeadCellProps: { sx: { fontSize: '12px', color: 'grey'} },
+            },
+            {
+                accessorKey: 'particulars',
+                header: 'particulars'.toUpperCase(),
+                size: 50,
+                muiTableHeadCellProps: { sx: { fontSize: '12px', color: 'grey'} },
+            },
+            {
+                accessorKey: 'amount',
+                header: 'amount'.toUpperCase(),
+                size: 50,
+                muiTableHeadCellProps: { sx: { fontSize: '12px', color: 'grey'} },
+            },
+            {
+                accessorKey: 'concess',
+                header: 'concess'.toUpperCase(),
+                size: 50,
+                muiTableHeadCellProps: { sx: { fontSize: '12px', color: 'grey'} },
+            },
+            {
+                accessorKey: 'netfee',
+                header: 'NET FEE',
+                size: 50,
+                muiTableHeadCellProps: { sx: { fontSize: '12px', color: 'grey'} },
+            },
         ],
         [],
-      );
+    );
 
     const table = useMaterialReactTable({
         columns,
         data,
-      });
+    });
 
 
     return (
@@ -211,6 +231,10 @@ function ApplicationRegistration() {
                     </div>
                 </div>
             </form>
+            <div className='application-registration-table-bg-container mt-4'>
+                <h1 className='application-registration-main-heading mb-0'>APPLICATION REGISTRATION TABLE</h1>   
+                <MaterialReactTable table={table}/>
+            </div>
         </div>
     )
 }
