@@ -28,6 +28,7 @@
 .bell-icon-with-logout {
     display:flex;
     align-items:center;
+    justify-content:space-between;
 }
 
 .header-bg-container .power-icon-with-span {
@@ -50,8 +51,8 @@
 }
 
 
-@media (min-width:993px) {
+/*@media (min-width:993px) {
     .header-bg-container .hamburger-menu {
         display:none;
     }
-}
+}*/

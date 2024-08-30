@@ -9,7 +9,6 @@ import './SideBar.css'
 
 
 const SideBar = () => {
-  const value = useSelector((state) => state.toggle.value)
   const dispatch = useDispatch()
   return (
     <div className='bg-container'>

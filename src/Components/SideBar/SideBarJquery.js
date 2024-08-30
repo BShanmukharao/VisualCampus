@@ -118,12 +118,18 @@ $(function () {
   });
 });
 
-
 $(function () {
   const arrowId = document.getElementById("Header-Arrow-Id");
   const sidebarId = document.getElementById('SideBar-Id');
   $(arrowId).on("click", function (e) {
     const isSidebarVisible = Store.getState().toggle.value;
+    if(isSidebarVisible) {
+        $(sidebarId).removeClass('addStyleclass');
+    }else {
+      $(sidebarId).addClass('addStyleclass');
+    }
+    //const isSidebarVisible = Store.getState().toggle.value;
+    //$(sidebarId).slideToggle();
   })
 })
 
