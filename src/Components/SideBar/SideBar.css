@@ -10,7 +10,6 @@
 
 
 .sidebar {
-    width: 310px;
     overflow-y: auto;
     scrollbar-width: none;
     height: 100vh;
@@ -19,6 +18,7 @@
     gap: 20px;
     background-color: #3b4655;
     padding: 24px;
+    transition: left 0.9s ease;
 }
 
 ol,
@@ -149,26 +149,27 @@ ul {
     transform: rotate(90deg);
 }
 
-.addStyleclass {
-    /*width: 270px;
-    color: white;
-    position: fixed;
-    top: 0;
-    left: -310px;
-    transition: transform left 1.9s ease;
-    z-index: 1000;*/
-    display:none;
+.addAboveStyleClass {
+    position: fixed !important;
+    left: -310px !important;;
+    transition: left 0.9s ease;
+    z-index: 1000;
+}
+
+.addBelowStylesClass {
+    position:fixed !important;
+    width: 270px;
+    height: 100vh;
+    left: 0px !important;
+    transition: left 0.9s ease;
+    z-index: 1000;
 }
 
 @media (max-width:992px) {
-    .sidebar {
-        display:none;
-        width: 270px;
-        max-width: 100%;
+    .bg-container {
         position: fixed;
-        top: 0;
-        left: 0;
-        transition: transform 0.3s ease;
+        left: -310px;
+        transition: left 0.9s ease;
         z-index: 1000;
     }
 
@@ -235,7 +236,7 @@ ul {
     }
 
     .text {
-        font-size: 12px;
+        font-size: 13px;
     }
 }
 

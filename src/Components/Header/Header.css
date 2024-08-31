@@ -50,9 +50,20 @@
     transform: rotate(180deg);
 }
 
-
-/*@media (min-width:993px) {
-    .header-bg-container .hamburger-menu {
+@media (max-width:992px) {
+    .header-bg-container .above-mobile {
         display:none;
     }
-}*/
+    .header-bg-container .below-mobile {
+        display:block;
+    }
+}
+
+@media (min-width:993px) {
+    .header-bg-container .above-mobile {
+        display:block;
+    }
+    .header-bg-container .below-mobile {
+        display:none;
+    }
+}

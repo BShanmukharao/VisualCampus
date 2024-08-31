@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { toggleValue } from '../Redux/ToggleSideBarSlice';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBell, faPowerOff, faArrowLeft, faCircleLeft, faCircleArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faBell, faPowerOff, faCircleArrowLeft , faCircleArrowRight } from '@fortawesome/free-solid-svg-icons';
 import './Headerjquery'
 import './Header.css'
 
@@ -15,7 +15,8 @@ function Header () {
     return (
         <div className='header-bg-container'>
             <div>
-                <a data-toggle="tooltip" data-placement="top" title="Toggle sidebar" id='Header-Arrow-Id' onClick={() => dispatch(toggleValue())}><FontAwesomeIcon icon={faCircleArrowRight} className="hamburger-menu" id="header-arrow-icon"/></a>
+                <a data-toggle="tooltip" data-placement="top" title="Toggle sidebar" id='Header-Above-Arrow-Id' onClick={() => dispatch(toggleValue())}><FontAwesomeIcon icon={faCircleArrowLeft} className={`hamburger-menu ${'above-mobile'}`} id="header-above-arrow-icon"/></a>
+                <a data-toggle="tooltip" data-placement="top" title="Toggle sidebar" id='Header-Below-Arrow-Id' onClick={() => dispatch(toggleValue())}><FontAwesomeIcon icon={faCircleArrowRight} className={`hamburger-menu ${'below-mobile'}`} id="header-below-arrow-icon"/></a>
             </div>
             <div className='bell-icon-with-logout'>
                 <a data-toggle="tooltip" data-placement="top" title="See notifications">

@@ -2,13 +2,14 @@ import $ from 'jquery';
 
 $(function () {
 
-    const getArroId = document.getElementById('header-arrow-icon');
+  const getAboveArrowId = document.getElementById('header-above-arrow-icon');
 
-    $(getArroId).on("click", function (e) {
+  $(getAboveArrowId).on("click", function (e) {
 
     e.preventDefault();
-   
-    $(getArroId).toggleClass("rotate-nav-arrow");
+
+    $(getAboveArrowId).toggleClass("rotate-nav-arrow");
 
   });
+
 });
