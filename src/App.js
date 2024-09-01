@@ -2,17 +2,18 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Login from './Components/Login/Login'
 import Home from './Components/Home/Home'
 import './App.css'
-import SideBar from './Components/SideBar/SideBar';
-import Header from './Components/Header/Header';
+
 
 function App() {
   return (
-    <Router>
+    <div className='app-bg-container '>
+      <Router>
         <Routes>
           <Route exact path="/" element={<Login />} />
-          <Route exact path="/Home" element={<Home />} />
+          <Route exact path="/home/*" element={<Home />} />
         </Routes>
-    </Router>
+      </Router>
+    </div>
   );
 }
 

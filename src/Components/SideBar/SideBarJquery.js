@@ -1,5 +1,6 @@
 import $ from 'jquery';
-
+import { useSelector } from 'react-redux';
+import { Store } from '../Redux/Store';
 
 //first-nested-menu
 
@@ -102,7 +103,7 @@ $(function () {
   $(".menu > ul > li > ul > li > ul > li > ul > li > ul > li > a").on("click", function (e) {
 
     e.preventDefault();
-    
+
 
     $(this).find('.arrow').toggleClass("rotate");     // Toggle the "rotate" class on the clicked arrow
 
@@ -116,6 +117,37 @@ $(function () {
   });
 });
 
+$(function () {
+  const aboveArrowId = document.getElementById("Header-Above-Arrow-Id");
+  const belowArrowId = document.getElementById('Header-Below-Arrow-Id');
+  const closeSideBarId = document.getElementById("close-sidebar-id");
+  const sidebarId = document.getElementById('SideBar-Id');
 
+  $(aboveArrowId).on("click", function (e) {
+    e.preventDefault();
+    $(sidebarId).toggleClass('addAboveStyleClass');
+  });
+
+  $(belowArrowId).on('click', function (e) {
+    e.preventDefault();
+    $(sidebarId).toggleClass('addBelowStylesClass');
+  })
+  $(closeSideBarId).on('click', function (e) {
+    e.preventDefault();
+    $(sidebarId).removeClass("addBelowStylesClass");
+  })
+
+  
+
+  /*$(arrowId).on("click", function (e) {
+    //sidebarId.toggleClass.toggle('addStyleclass')
+    /*const isSidebarVisible = Store.getState().toggle.value;
+    if (isSidebarVisible) {
+      $(sidebarId).removeClass('addStyleclass');
+    } else {
+      $(sidebarId).addClass('addStyleclass');
+    }
+  })*/
+})
 
 
