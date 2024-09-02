@@ -1,6 +1,6 @@
 import React, { /*useState*/ } from 'react';
 import { useEffect, useMemo } from 'react';
-//import axios from 'axios';
+import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './ApplicationsRegistrationFee.css'
 import {
@@ -102,7 +102,6 @@ function ApplicationRegistration() {
 
         // setClassAPIList
 
-
         // Define an asynchronous function
        /*const fetchData = async () => {
             try {
@@ -120,10 +119,7 @@ function ApplicationRegistration() {
             } catch (error) {
                 console.log(error)
             }
-        };
-
-
-        fetchData();*/
+        };*/
     }, []);
 
     const columns = useMemo(

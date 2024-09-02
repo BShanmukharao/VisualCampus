@@ -6,7 +6,7 @@ import { faUser, faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Login.css'
 
-const Login = () => {
+export const Login = () => {
 
     const [userMobile, setUserMobile] = useState("")
     const [UserPassword, setUserPassword] = useState("")
@@ -53,5 +53,3 @@ const Login = () => {
         </div>
     )
 }
-
-export default Login

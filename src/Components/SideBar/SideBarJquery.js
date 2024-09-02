@@ -1,8 +1,7 @@
 import $ from 'jquery';
-import { useSelector } from 'react-redux';
-import { Store } from '../Redux/Store';
 
 //first-nested-menu
+
 
 $(function () {
 
@@ -117,7 +116,9 @@ $(function () {
   });
 });
 
+
 $(function () {
+
   const aboveArrowId = document.getElementById("Header-Above-Arrow-Id");
   const belowArrowId = document.getElementById('Header-Below-Arrow-Id');
   const closeSideBarId = document.getElementById("close-sidebar-id");
@@ -128,15 +129,19 @@ $(function () {
     $(sidebarId).toggleClass('addAboveStyleClass');
   });
 
+
   $(belowArrowId).on('click', function (e) {
     e.preventDefault();
     $(sidebarId).toggleClass('addBelowStylesClass');
-  })
+  });
+
+
   $(closeSideBarId).on('click', function (e) {
     e.preventDefault();
     $(sidebarId).removeClass("addBelowStylesClass");
-  })
+  });
 
+  
 })
 
 

@@ -173,7 +173,7 @@ ul {
 @media (max-width:992px) {
     .bg-container {
         position: fixed;
-        left: -310px;
+        left: -320px;
         transition: left 0.9s ease;
         z-index: 1000;
     }
