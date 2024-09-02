@@ -137,17 +137,6 @@ $(function () {
     $(sidebarId).removeClass("addBelowStylesClass");
   })
 
-  
-
-  /*$(arrowId).on("click", function (e) {
-    //sidebarId.toggleClass.toggle('addStyleclass')
-    /*const isSidebarVisible = Store.getState().toggle.value;
-    if (isSidebarVisible) {
-      $(sidebarId).removeClass('addStyleclass');
-    } else {
-      $(sidebarId).addClass('addStyleclass');
-    }
-  })*/
 })
 
 

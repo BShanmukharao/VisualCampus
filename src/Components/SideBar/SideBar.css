@@ -149,9 +149,14 @@ ul {
     transform: rotate(90deg);
 }
 
+.bg-container {
+    left: 0px;
+    transition: left 0.9s ease;
+}
+
 .addAboveStyleClass {
-    position: fixed !important;
-    left: -310px !important;;
+    position:fixed !important;
+    left: -310px !important;
     transition: left 0.9s ease;
     z-index: 1000;
 }
