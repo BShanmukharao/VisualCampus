@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { /*useState*/ } from 'react';
 import { useEffect, useMemo } from 'react';
-import axios from 'axios';
+//import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './ApplicationsRegistrationFee.css'
 import {
@@ -57,20 +57,20 @@ const data = [
 function ApplicationRegistration() {
 
     const [getTodayData, setTodayDate] = React.useState('');
-    const [getClassAPIList, setClassAPIList] = useState([]);
+    //const [getClassAPIList, setClassAPIList] = useState([]);
 
     const getFormData = (e) => {
         e.preventDefault()
         console.log("properly")
     }
 
-    const showdata = () => {
+    /*const showdata = () => {
         {
-            getClassAPIList[0].map((eachClassItem, key) => (
+         getClassAPIList[0].map((eachClassItem, key) => (
                 console.log(eachClassItem)
             ))
         }
-    }
+    }*/
 
     /*
     <option value="nursary">NURSARY</option>
@@ -104,11 +104,11 @@ function ApplicationRegistration() {
 
 
         // Define an asynchronous function
-        const fetchData = async () => {
+       /*const fetchData = async () => {
             try {
                 // Make the API call using axios and await the response
                 const classURL = 'https://visualcampus.in/API/api/TeacherController/GETListAllClass?Clientid=1&Branchid=1&EmpId=1'
-                await axios.get(classURL)
+                axios.get(classURL)
                     .then(response => {
                         const data = response.data.Response;
                         const newObject = data.map((eachItem) => ({
@@ -123,7 +123,7 @@ function ApplicationRegistration() {
         };
 
 
-        fetchData();
+        fetchData();*/
     }, []);
 
     const columns = useMemo(
@@ -286,7 +286,7 @@ function ApplicationRegistration() {
                         </div>
                     </div>
                     <div className='buttons-container pt-4 pb-4'>
-                        <button className='buttons btn btn-primary' type='button' onClick={showdata}>BACK</button>
+                        <button className='buttons btn btn-primary' type='button'>BACK</button>
                         <button className='buttons btn btn-success' type='submit'>SUBMIT</button>
                     </div>
                 </div>

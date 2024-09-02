@@ -18,7 +18,7 @@ const Login = () => {
     const getUserData = (event) => {
         event.preventDefault();
         const userDetails = { userMobile, UserPassword };
-         navigate('/Home');
+        navigate('/Home');
         setUserMobile("")
         setUserPassword("")
     }

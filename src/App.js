@@ -6,7 +6,7 @@ import './App.css'
 
 function App() {
   return (
-    <div className='app-bg-container '>
+    <div className='app-bg-container'>
       <Router>
         <Routes>
           <Route exact path="/" element={<Login />} />
